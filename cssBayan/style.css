@@ -13,10 +13,6 @@ body {
 	cursor: pointer;
 }
 
-.bayan__secret-input:checked~.bayan__title label {
-	cursor: default;
-}
-
 .bayan__item {
 	border-bottom: 3px solid;
 }
