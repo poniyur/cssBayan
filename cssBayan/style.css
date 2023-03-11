@@ -63,30 +63,17 @@ body {
 }
 
 
-/* иконки */
+/* иконка */
 .bayan__icon {
 	opacity: 0;
-	font-weight: 100;
+	transition: transform 0.3s;
 }
 
 .bayan:hover .bayan__icon {
 	opacity: 1;
 }
 
-.bayan__icon.bayan__icon--on {
-	display: inline-block;
-}
-
-.bayan__item:hover .bayan__icon.bayan__icon--on,
-.bayan__secret-input:checked~.bayan__title .bayan__icon.bayan__icon--on {
-	display: none;
-}
-
-.bayan__icon.bayan__icon--off {
-	display: none;
-}
-
-.bayan__item:hover .bayan__icon.bayan__icon--off,
-.bayan__secret-input:checked~.bayan__title .bayan__icon.bayan__icon--off {
-	display: inline-block;
+.bayan__item:hover .bayan__icon,
+.bayan__secret-input:checked~.bayan__title .bayan__icon {
+	transform: rotate(405deg);
 }
