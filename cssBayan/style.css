@@ -57,6 +57,7 @@ body {
 	margin: auto;
 }
 
+.bayan__item:hover .bayan__mem,
 .bayan__secret-input:checked~.bayan__content .bayan__mem {
 	max-height: 300px;
 }
@@ -76,6 +77,7 @@ body {
 	display: inline-block;
 }
 
+.bayan__item:hover .bayan__icon.bayan__icon--on,
 .bayan__secret-input:checked~.bayan__title .bayan__icon.bayan__icon--on {
 	display: none;
 }
@@ -84,6 +86,7 @@ body {
 	display: none;
 }
 
+.bayan__item:hover .bayan__icon.bayan__icon--off,
 .bayan__secret-input:checked~.bayan__title .bayan__icon.bayan__icon--off {
 	display: inline-block;
 }
