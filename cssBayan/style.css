@@ -17,6 +17,11 @@ body {
 	border-bottom: 0.2rem solid;
 }
 
+.bayan__item:active .bayan__mem {
+	opacity: 0.8;
+}
+
+.bayan__item:active,
 .bayan__item:active .bayan__text {
 	color: #4287f5 !important;
 }
