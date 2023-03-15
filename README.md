@@ -1,2 +1,1 @@
-# cssBayan
-https://github.com/DrDiman/CSS-Bayan-task
+https://poniyur.github.io/cssBayan/cssBayan/index.html

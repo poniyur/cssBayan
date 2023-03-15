@@ -1,0 +1,116 @@
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1rem;
+}
+
+.bayan {
+	width: 95%;
+	max-width: 60rem;
+	margin: auto;
+}
+
+.bayan label {
+	cursor: pointer;
+}
+
+.bayan__item {
+	border-bottom: 0.2rem solid;
+}
+
+.bayan__item:active .bayan__mem {
+	opacity: 0.8;
+}
+
+.bayan__item:active,
+.bayan__item:active .bayan__text {
+	color: #4287f5 !important;
+}
+
+.bayan__item:first-of-type {
+	border-top: 0.2rem solid;
+}
+
+.bayan__secret-input {
+	display: none;
+}
+
+.bayan__title {
+	width: 100%;
+	margin: 0;
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 820px) {
+	.bayan__title {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.bayan__title {
+		font-size: 2rem;
+	}
+}
+
+.bayan__title-label {
+	display: flex;
+	cursor: pointer;
+}
+
+.bayan__text {
+	font-weight: bold;
+	color: #4287f5;
+}
+
+.bayan__status {
+	margin-left: auto;
+}
+
+.bayan__secret-input:checked~.bayan__title .bayan__text {
+	color: black;
+}
+
+@media (hover: hover) {
+	.bayan:hover .bayan__text {
+		color: black;
+	}
+}
+
+.bayan__mem {
+	max-height: 0;
+	transition: max-height 0.3s;
+	display: block;
+	margin: auto;
+}
+
+.bayan__secret-input:checked~.bayan__content .bayan__mem {
+	max-height: 20rem;
+}
+
+@media (hover: hover) {
+	.bayan__item:hover .bayan__mem {
+		max-height: 20rem;
+	}
+}
+
+/* иконка */
+.bayan__icon {
+	opacity: 0;
+	transition: transform 0.3s;
+}
+
+@media (hover: hover) {
+	.bayan:hover .bayan__icon {
+		opacity: 1;
+	}
+}
+
+.bayan__secret-input:checked~.bayan__title .bayan__icon {
+	transform: rotate(405deg);
+}
+
+@media (hover: hover) {
+	.bayan__item:hover .bayan__icon {
+		opacity: 1;
+	}
+}
