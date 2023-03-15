@@ -17,6 +17,10 @@ body {
 	border-bottom: 0.2rem solid;
 }
 
+.bayan__item:active .bayan__text {
+	color: #4287f5 !important;
+}
+
 .bayan__item:first-of-type {
 	border-top: 0.2rem solid;
 }
